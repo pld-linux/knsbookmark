@@ -27,9 +27,9 @@ touch `find . -type f`
 
 %build
 if [ -z "$KDEDIR" ]; then
-	export KDEDIR=%{_prefix}
+	KDEDIR=%{_prefix} ; export KDEDIR
 fi
-CXXFLAGS="$RPM_OPT_FLAGS" CFLAGS="$RPM_OPT_FLAGS" ./configure \
+CXXFLAGS="%{rpmcflags}" CFLAGS="%{rpmcflags}" ./configure \
 	--prefix=$KDEDIR
 %{__make}
 
