@@ -14,8 +14,6 @@ BuildRequires:	qt-devel
 BuildRequires:	kdelibs-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
-%define		_mandir		%{_prefix}/man
 
 %description
 Converts a Netscape bookmark file into kfm bookmark tree structure
