@@ -7,6 +7,7 @@ License:	GPL
 Group:		X11/Applications/Networking
 Vendor:		Ewald Arnold <earnold@w-4.de>
 Source0:	ftp://ftp.kde.org/pub/kde/Attic/old/1.1.2/apps/network/%{name}-%{version}.tar.gz
+# Source0-md5:	7dac3cd166c7ebad57f40f2a82996caf
 #Patch0:		%{name}-0.3.2.patch
 #Patch0:	%{name}-%{version}.patch
 URL:		http://www.w-4.de/~earnold/progra-e.htm#knsbookmark
