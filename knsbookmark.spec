@@ -1,13 +1,14 @@
 Summary:	Converts Netscape bookmarks to kfm bookmarks in KDE
 Name:		knsbookmark
-Version:	0.3.0
+Version:	0.3.2
 Release:	1
 Group:		X11/KDE/Internet
 ######		Unknown group!
 License:	GPL
 Vendor:		Ewald Arnold <earnold@w-4.de>
-Source0:	%{name}-%{version}.tar.gz
-Patch0:		%{name}-%{version}.patch
+Source0:	ftp://ftp.kde.org/pub/kde/Attic/old/1.1.2/apps/network/%{name}-%{version}.tar.gz
+Patch0:		%{name}-0.3.2.patch
+#Patch0:	%{name}-%{version}.patch
 URL:		http://www.w-4.de/~earnold/progra-e.htm#knsbookmark
 BuildRequires:	qt-devel
 BuildRequires:	kdelibs-devel
