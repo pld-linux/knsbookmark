@@ -28,7 +28,7 @@ if [ -z "$KDEDIR" ]; then
 fi
 CXXFLAGS="$RPM_OPT_FLAGS" CFLAGS="$RPM_OPT_FLAGS" ./configure \
 	--prefix=$KDEDIR
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
