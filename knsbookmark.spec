@@ -11,7 +11,7 @@ Patch:		%{name}-%{version}.patch
 URL:		http://www.w-4.de/~earnold/progra-e.htm#knsbookmark
 BuildRequires:	qt-devel
 BuildRequires:	kdelibs-devel
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Converts a Netscape bookmark file into kfm bookmark tree structure (.kdelnk
