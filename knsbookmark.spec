@@ -9,8 +9,8 @@ Packager:	Troy Engel <tengel@sonic.net>
 Source:		%{name}-%{version}.tar.gz
 Patch:		%{name}-%{version}.patch
 URL:		http://www.w-4.de/~earnold/progra-e.htm#knsbookmark
-BuildPrereq:	qt-devel
-BuildPrereq:	kdelibs-devel
+BuildRequires:	qt-devel
+BuildRequires:	kdelibs-devel
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
