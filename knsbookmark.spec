@@ -3,19 +3,22 @@ Name:		knsbookmark
 Version:	0.3.0
 Release:	1
 Group:		X11/KDE/Internet
-Copyright:	GPL
+######		Unknown group!
+License:	GPL
 Vendor:		Ewald Arnold <earnold@w-4.de>
-Packager:	Troy Engel <tengel@sonic.net>
-Source:		%{name}-%{version}.tar.gz
-Patch:		%{name}-%{version}.patch
+Source0:	%{name}-%{version}.tar.gz
+Patch0:		%{name}-%{version}.patch
 URL:		http://www.w-4.de/~earnold/progra-e.htm#knsbookmark
 BuildRequires:	qt-devel
 BuildRequires:	kdelibs-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+%define		_prefix		/usr/X11R6
+%define		_mandir		%{_prefix}/man
+
 %description
-Converts a Netscape bookmark file into kfm bookmark tree structure (.kdelnk
-files). Commandline tool.
+Converts a Netscape bookmark file into kfm bookmark tree structure
+(.kdelnk files). Commandline tool.
 
 %prep
 %setup -q
@@ -24,7 +27,7 @@ touch `find . -type f`
 
 %build
 if [ -z "$KDEDIR" ]; then
-	export KDEDIR=%{prefix}
+	export KDEDIR=%{_prefix}
 fi
 CXXFLAGS="$RPM_OPT_FLAGS" CFLAGS="$RPM_OPT_FLAGS" ./configure \
 	--prefix=$KDEDIR
@@ -43,3 +46,4 @@ find . -type l | sed 's,^\.,\%attr(-\,root\,root) ,' >> $RPM_BUILD_DIR/file.list
 rm -rf $RPM_BUILD_ROOT
 
 %files -f ../file.list.%{name}
+%defattr(644,root,root,755)
