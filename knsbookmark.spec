@@ -1,10 +1,12 @@
 Summary:	Converts Netscape bookmarks to kfm bookmarks in KDE
+Summary(pl):	Konwerter bookmarków Netscape do kfm
 Name:		knsbookmark
 Version:	0.3.2
 Release:	1
-Group:		X11/KDE/Internet
-######		Unknown group!
 License:	GPL
+Group:		X11/Applications/Networking
+Group(de):	X11/Applikationen/Netzwerkwesen
+Group(pl):	X11/Aplikacje/Sieciowe
 Vendor:		Ewald Arnold <earnold@w-4.de>
 Source0:	ftp://ftp.kde.org/pub/kde/Attic/old/1.1.2/apps/network/%{name}-%{version}.tar.gz
 Patch0:		%{name}-0.3.2.patch
@@ -20,6 +22,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Converts a Netscape bookmark file into kfm bookmark tree structure
 (.kdelnk files). Commandline tool.
+
+%description -l pl
+Konwerter pliku z bookmarkami Netscape do drzewa bookmarków kfm (pliki
+.kdelnk). Jest to narzêdzie dzia³aj±ce z linii poleceñ.
 
 %prep
 %setup -q
