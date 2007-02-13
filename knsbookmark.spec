@@ -1,5 +1,5 @@
 Summary:	Converts Netscape bookmarks to kfm bookmarks in KDE
-Summary(pl.UTF-8):   Konwerter bookmarków Netscape do kfm
+Summary(pl.UTF-8):	Konwerter bookmarków Netscape do kfm
 Name:		knsbookmark
 Version:	0.3.2
 Release:	1
