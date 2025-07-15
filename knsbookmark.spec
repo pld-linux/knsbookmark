@@ -26,7 +26,7 @@ Konwerter pliku z bookmarkami Netscape do drzewa bookmarków kfm (pliki
 
 %prep
 %setup -q
-#%patch -p1
+#%%patch -p1
 touch `find . -type f`
 
 %build
